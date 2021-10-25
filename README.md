@@ -1,7 +1,7 @@
 #DEIVIDAS URBANAVIČIUS 2021-10
 ---
 
--This project is made with React.
+- This project is made with React.
 
 - I used "Redux" where urls that user clicked on are stored in state. Also, when user clicks on "BACK" button, it deletes the latest url from that state and user can get back to the all previous pages (All information goes to console if you want to see it).
 --- npm instal redux, npm install react-redux ---
