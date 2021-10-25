@@ -22,6 +22,8 @@
 
 - ESLint is installed in this project.
 
+Start (npm start) this project with localhost:3000.
+
 
 
 Have a good day.
