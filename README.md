@@ -6,7 +6,7 @@
 - I used "Redux" where urls that user clicked on are stored in state. Also, when user clicks on "BACK" button, it deletes the latest url from that state and user can get back to the all previous pages (All information goes to console if you want to see it).
 --- npm instal redux, npm install react-redux ---
 
-- "Products" > "Offers Today" conditionCode (from API) image rendering works well. I've faced with CORS errors as It was said in task document and successfully fixed it. The whole data is dispatched with reducer (File: MainSecondSection.jsx). If the API has not fetched yet, user sees loading image.
+- "Products" > "Offers Today" conditionCode (from API) image rendering works well. I've faced with CORS errors as It was said in task document and successfully fixed it by adding "proxy": "https://api.meteo.lt/" in 'package.json' file. The whole data is dispatched with reducer (File: MainSecondSection.jsx). If the API has not fetched yet, user sees loading image.
 
 - The page is responsive. It looks good in both computer and mobile phone.
 
