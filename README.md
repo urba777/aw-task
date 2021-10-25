@@ -28,6 +28,7 @@
 
 
 I hope you liked it.
-Have a good day,
+Have a good day.
+
 Deividas Urbanavičius
 ---
