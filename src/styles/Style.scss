@@ -1,0 +1,566 @@
+$blueColor: rgb(68,140,203);
+$blackColor: rgb(30,33,35);
+$grayColor: rgb(215,215,215);
+$wrapperWidth: 1365px;
+$fontColor1: #fff;
+$fontColor2: #000;
+$titleSize: 40px;
+$title2Size: 23px;
+$buttonFontSize: 20px;
+$paragraphFontSize: 21px;
+$containersPadding: 37px;
+$marginBetweenSections: 80px;
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $fontColor1;
+}
+
+.navBottomButtons, .footerButtons {
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  span {
+    white-space: nowrap;
+    cursor: pointer;
+    color: $fontColor1;
+    padding-left: 27px;
+  }
+}
+
+li, button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: $titleSize;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: $title2Size;
+  color: $blackColor;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 18px 40px;
+  border: 3px solid $fontColor1;
+  background-color: rgba(0,0,0,0);
+  font-weight: bold;
+  font-size: $buttonFontSize;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.separator {
+  max-width: 75px;
+  width: 100%;
+  height: 10px;
+  margin: 30px 0;
+}
+
+.spaceBetweenParagraphs {
+  padding-top: 3%;
+}
+
+nav {
+  background-color: $blueColor;
+  font-weight: 300;
+  color: $fontColor1;
+  .navWrapper {
+    max-width: $wrapperWidth;
+    width: 90%;
+    margin: auto;
+    ul {
+      list-style-type: none;
+    }
+    .navTop {
+      ul {
+        font-size: 15px;
+        display: inline-flex;
+        li {
+          margin: 36px 9px 0px 0px;
+          padding: 5px 12px 5px 0px;
+          border-right: #fff solid 2px;
+          }
+        .navTopLastOne {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.navBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 105px;
+  margin-top: 52px;
+  .worksButtonFromNav:hover .dropDown {
+    display: block;
+  }
+  .dropDown {
+    padding-top: -10px;
+    position: absolute;
+    top: 144px;
+    display: none;
+    .dropDownContainer {
+      text-align: center;
+      max-width: 214px;
+      width: 100%;
+    }
+    .dropDownBox {
+      text-align: left;
+      background-color: $blackColor;
+      margin-top: -6px;
+      font-size: 17px;
+      width: 132px;
+      margin-left: -6px;
+      padding: 8px;
+      li {
+        padding: 10px 15px;
+      }
+    }
+    .dropDownArrow {
+      color: $blackColor;
+      margin-left: -30px;
+      font-size: 20px;
+    }
+  }
+}
+
+li:hover {
+  background-color: $fontColor1;
+  color: $blackColor;
+}
+
+.navTopButton:hover {
+  background-color: rgba(0,0,0,0);
+  color: $fontColor1;
+}
+
+.orderSvg {
+  cursor: pointer;
+  display: none;
+  width: 64px;
+  height: 64px;
+  background-color: rgb(43, 104, 157);
+  border-radius: 7px;
+  padding: 17px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  .orderDropDown {
+    padding-top: -10px;
+    position: absolute;
+    display: none;
+    top: 180px;
+    right: 4.5%;
+    text-align: left;
+    .orderDropDownContainer {
+      background-color: $blackColor;
+      margin-top: -6px;
+      font-size: 17px;
+      width: 132px;
+      margin-left: -6px;
+      padding: 8px;
+      li {
+        padding: 10px 15px;
+      }
+      li:hover {
+        background-color: $fontColor1;
+        color: $blackColor;
+      }
+    }
+  }
+}
+.orderSvg:hover .orderDropDown {
+  display: block;
+}
+
+.orderDropDownArrow {
+  color: $blackColor;
+  font-size: 20px;
+  margin-left: 82px;
+}
+
+.orderDropDownLastButtons {
+  display: none;
+}
+
+div.navBottom > div.orderSvg > div > div > ul > li.orderDropDownLastButtons.orderDropDownSpace:hover {
+  cursor: default;
+  background-color: $blackColor;
+  color: $fontColor1;
+}
+
+.secondSection {
+  padding: 0 $containersPadding;
+  text-transform: uppercase;
+  margin-bottom: $marginBetweenSections;
+  h3 {
+    padding: 20px 0;
+  }
+}
+
+.firstSectionLeftSide {
+  background-color: $blueColor;
+  max-width: 400px;
+  width: 100%;
+  height: 584px;
+  color: $fontColor1;
+  padding: $containersPadding;
+  margin-right: 3%;
+  p {
+    font-size: $paragraphFontSize;
+  }
+  .separator {
+    background-color: $fontColor1;
+  }
+  .buttonFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    margin-top: 90px;
+    color: $fontColor1;
+  }
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $marginBetweenSections;
+}
+
+.firstSectionRightSide {
+  max-width: 897px;
+  width: 90%;
+  height: 584px;
+  background-color: $grayColor;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  .firstSectionRightSideText {
+    padding: 2% 5%;
+  }
+  h1 {
+    padding-bottom: 2%;
+    color: $blackColor;
+  }
+  p {
+    font-size: $paragraphFontSize;
+  }
+}
+
+.secondSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  .weatherImage {
+    max-width: 620px;
+    width: 100%;
+  }
+  .secondSectionRightImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 620px;
+    width: 100%;
+    .secondSectionRightImage {
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 620px;
+      width: 100%;
+      padding-bottom: 45%;
+    }
+    .secondSectionRightImage:first-child {
+      margin-bottom: 5%;
+    }
+    span {
+      position: absolute;
+      font-size: $title2Size;
+      font-weight: 500;
+      background-color: rgba(215,215,215,0.5);
+      max-width: inherit;
+      width: 100%;
+      bottom: 0;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 20px 30px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.thirdSection {
+  padding: 0 $containersPadding;
+  margin-bottom: 45px;
+  .separator {
+    background-color: $blackColor;
+  }
+  .thirdSectionContainer {
+    display: flex;
+    justify-content: space-between;
+    .thirdSectionLeftSide {
+      max-width: 852px;
+      width: 90%;
+      margin-right: 5%;
+      p {
+        font-size: $paragraphFontSize;
+        color: $blackColor;
+      }
+    }
+  }
+}
+
+.thirdSectionRightSide {
+  max-width: 318px;
+  width: 100%;
+  position: relative;
+  top: -20px;
+  input, textarea {
+    border: $grayColor 3px solid;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: $blackColor;
+  }
+  input {
+    height: 46px;
+    padding: 0 15px;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+  textarea {
+    resize: none;
+    height: 224px;
+    padding: 5px 15px;
+  }
+  textarea:focus, input:focus {
+    border-color: $blackColor;
+    border-radius: 0px;
+  }
+  button {
+    border: $blueColor 3px solid;
+    color: $blueColor;
+  }
+}
+
+.singlePage {
+  padding-bottom: 50%;
+  .titleAndBackButton {
+    display: flex;
+    justify-content: space-between;
+    button {
+      border: 3px solid $blueColor;
+      color: $blueColor;
+    }
+  }
+  .separator {
+    background-color: $blackColor;
+  }
+  p {
+    font-size: 22px;
+    text-align: justify;
+    font-weight: 400;
+  }
+}
+
+.mainWrapper {
+  margin: auto;
+  max-width: $wrapperWidth;
+  width: 90%;
+  margin-top: 55px;
+  .page404 {
+    text-align: center;
+    padding: 15% 0;
+  }
+}
+
+footer {
+  background-color: $blackColor;
+  .footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: $wrapperWidth;
+    width: 90%;
+    margin: auto;
+    padding: 55px 0px;
+    p {
+      max-width: 593px;
+      width: 100%;
+      font-size: 18px;
+      padding-bottom: 13px;
+      color: rgb(165, 165, 165);
+      position: relative;
+      left: -4%;
+    }
+    .footerRightSide {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      .allRightsReserved {
+        color: $fontColor1;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .weatherImage {
+    margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .firstSection {
+    flex-direction: column;
+  }
+  .firstSectionLeftSide {
+    max-width: 620px;
+    width: 100%;
+    margin-right: 0%;
+    margin: auto;
+    margin-bottom: 5%;
+    height: auto;
+  }
+  .firstSectionRightSide {
+    max-width: 620px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  .secondSectionContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0;
+    .weatherImage {
+      margin: auto;
+      margin-bottom: 5%;
+    }
+    .secondSectionRightImages {
+      margin: auto;
+    }
+    .secondSectionRightImage {
+      margin: auto;
+      min-height: 288px;
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .thirdSectionContainer {
+    flex-direction: column;
+  }
+  .thirdSectionLeftSide {
+    text-align: left;
+  }
+  .thirdSectionRightSide {
+    top: 20px;
+    margin: auto;
+  }
+  .footerWrapper p {
+    display: none;
+  }
+  .footerRightSide {
+    margin: auto;
+  }
+  .footerButtons {
+    margin-bottom: 20px;
+  }
+  .submitButton {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav > div > div.navBottom > div.orderSvg {
+    display: block;
+  }
+  .navBottomButtons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .secondSection {
+    padding: 0 0;
+    .secondSectionRightImage {
+      background-position-x: -90px;
+    }
+    .secondSectionRightImages span {
+      padding: 20px 15px;
+    }
+  }
+  .thirdSection {
+    padding: 0 0;
+  }
+  .navTop {
+    display: none;
+  }
+  .orderDropDownLastButtons {
+    display: block;
+  }
+  .orderSvg .orderDropDown {
+    top: 80px;
+  }
+  .navBottom {
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .footerButtons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 461px) {
+  .firstSectionLeftSide {
+    height: auto;
+    button {
+      margin-top: 57px;
+    }
+  }
+  #root > main > div > div > div.titleAndBackButton button {
+    padding: 4px 12px;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  body {
+    min-width: 270px;
+  }
+  .navBottom {
+    flex-direction: column;
+  }
+  button {
+    font-size: 14px;
+  }
+  .orderSvg .orderDropDown {
+    top: 109px;
+    left: 69px;
+  }
+  .orderSvg .orderDropDownArrow {
+    margin-left: 60px;
+  }
+}
