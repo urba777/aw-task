@@ -22,9 +22,6 @@
 
 - ESLint is installed in this project.
 
-I didn't do "npm run build" in the project.
-
-
 
 
 Have a good day.
