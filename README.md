@@ -14,7 +14,7 @@
 
 - The order/sandwich drop-down button also works well. It is made with CSS. There's also drop-down when user mouse over "Works" in the menu. There are 3 different drop-downs when resizing the screen.
 
-- When a user applies a form, he receives an alert about his written statuses.
+- When a user applies a form, he receives an alert about his written information.
 
 - I used SASS to create the style.
 
