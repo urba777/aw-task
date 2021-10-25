@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+#DEIVIDAS URBANAVIČIUS 2021-10
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-This project is made with React.
 
-## Available Scripts
+- I used "Redux" where urls that user clicked on are stored in state. Also, when user clicks on "BACK" button, it deletes the latest url from that state and user can get back to the all previous pages (All information goes to console if you want to see it).
+--- npm instal redux, npm install react-redux ---
 
-In the project directory, you can run:
+- "Products" > "Offers Today" conditionCode (from API) image rendering works well. I've faced with CORS errors as It was said in task document and successfully fixed it. The whole data is dispatched with reducer (File: MainSecondSection.jsx). If the API has not fetched yet, user sees loading image.
 
-### `npm start`
+- The page is responsive. It looks good in both computer and mobile phone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The order/sandwich drop-down button also works well. It is made with CSS. There's also drop-down when user mouse over "Works" in the menu. There are 3 different drop-downs when resizing the screen.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- When a user applies a form, he receives an alert about his written statuses.
 
-### `npm test`
+- I used SASS to create the style.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- When user clicks on any footer's link, scrollToTopAfterClick() function is called to automatically scroll to the top of the page.
 
-### `npm run build`
+- If user manually typed wrong address, he sees "Error 404 Page Not Found" component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ESLint is installed in this project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I hope you liked it.
+Have a good day,
+Deividas Urbanavičius
+---
