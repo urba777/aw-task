@@ -17,6 +17,7 @@ const mapStateToProps = state => {
 
 const AppMain = ({ urls }) => {
 
+  document.title = "Adeo Web - Deividas Urbanavičius";
   //This function adds new url to state when user goes to any link
   const doAddUrl = (currentUrl) => {
     store.dispatch(addUrl({ url: currentUrl, time: Date.now() }));
