@@ -1,5 +1,4 @@
 //DEIVIDAS URBANAVICIUS 2021-10
-//ADEOWEB TASK
 import PageFooter from './components/Footer';
 import Main from './components/Main';
 import Navigation from './components/Navigation';
