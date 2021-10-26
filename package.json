@@ -1,5 +1,5 @@
 {
-  "name": "adeoweb",
+  "name": "aw-task",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://api.meteo.lt/",
