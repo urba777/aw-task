@@ -22,8 +22,6 @@
 
 - If user manually typed wrong address, he sees "Error 404 Page Not Found" component.
 
-- ESLint is installed in this project.
-
 Start (npm start) this project with localhost.
 
 
